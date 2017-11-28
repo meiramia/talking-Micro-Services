@@ -27,7 +27,7 @@ public class Application {
 	public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
 		return args -> {
 			String response = restTemplate.getForObject(
-					"http://localhost:8080/greeting?name=meir", String.class);
+					"http://localhost:8080/greeting?name=meir abukasis", String.class);
 			log.info(response);
 		};
 	}
